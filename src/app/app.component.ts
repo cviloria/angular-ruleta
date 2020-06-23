@@ -11,7 +11,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 
  //color = ['#fbc','#f88','#fbc','#f88','#fbc','#f88', "#fbc", "#f67"];
  color = ['#fbc','#f88'];
- label = ['Pregunta', 'Reto', 'Pregunta', 'Reto','Pregunta', 'Reto', 'Extra', "Pregunta"];
+ label = ['Pregunta', 'Reto', 'Pregunta', 'Reto','Pregunta', 'Reto', 'Extra', "Pregunta",'Pregunta', 'Reto'];
  slices:any;
  sliceDeg:any;
  deg: any;
@@ -34,6 +34,7 @@ ngAfterViewInit(){
   this.center = this.width/2;  
  
   this.ctx = this.canvas.nativeElement.getContext('2d');
+  
   this.drawImg();
   
 
@@ -86,6 +87,7 @@ start(){
    this.ctx.arc( this.center,  this.center,  this.width/2,  this.deg2rad(deg),  this.deg2rad(deg+ this.sliceDeg));
    this.ctx.lineTo( this.center,  this.center);
    this.ctx.fill();
+
 }
 
  drawText(deg, text) {
@@ -94,7 +96,7 @@ start(){
    this.ctx.rotate( this.deg2rad(deg));
    this.ctx.textAlign = "right";
    this.ctx.fillStyle = "#fff";
-   this.ctx.font = 'bold 20px sans-serif';
+   this.ctx.font = 'bold 20px quicksand';
    this.ctx.fillText(text, 130, 10);
    this.ctx.restore();
 }
@@ -118,7 +120,7 @@ start(){
      this.deg +=  this.sliceDeg;
      colorIndex++;
   }
-  
+
 }
 
 

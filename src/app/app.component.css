@@ -19,3 +19,26 @@ p {
   margin-left:-7px;
   transform: rotate(45deg)
 }
+
+
+
+
+.out-background {
+    
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    width: 407px;
+    height: 391px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url(https://virtualcolors.com/demos/ruleta/admin/assets/images/marco_ruleta.png);
+    top: 0px;
+    left: 0px;
+}
+
+.canvas-container{
+  position: relative;
+  padding: 45px 0px 0px 55px;
+}
